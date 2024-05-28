@@ -19,3 +19,6 @@ THE OUTPUT IS SHOWN BY GIVING COMMAND ./a.out<br/>
 ![Screenshot 2024-05-24 185119](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/9ef199bd-95ff-49fb-9806-a4f49fd8cc3d)
 <br/>
 
+### RISCV based Lab work
+##### compiling the same C program with RISCV
+
