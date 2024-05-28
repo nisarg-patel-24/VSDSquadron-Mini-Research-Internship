@@ -9,9 +9,7 @@ RISC relates with the designing of architecture.
 <br/>V (five) signifies that it is fifth generation architecture.
 ###### By convention, RISCV instructions are each
 1 word = 4 bytes = 32 bits
-
-* Divide the 32 bits of an instruction into
-“fields”.
+* Divide the 32 bits of an instruction into“fields”.
 ### How Does RISC-V work?
 Computer processors follow sets of instructions to perform tasks. 
 <br/>
@@ -20,7 +18,7 @@ RISC-V instructions are grouped into different types based on their function. He
 #### R-Type (Register Operations):
 Define “fields” of the following number of bits
 each: 7 + 5 + 5 + 3 + 5 + 7 = 32
-<br/>![Screenshot 2024-05-28 144917](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/195ac657-0d17-4fd5-9b54-9a4fd8372245)
+<br/>![Screenshot 2024-05-28 144917](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/195ac657-0d17-4fd5-9b54-9a4fd8372245)<br/>
 Each field has a name as shown below:
      ![Screenshot 2024-05-28 144950](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/97af4e2e-5e89-4992-895e-e9fc9143ad0f)
 <br/>
@@ -30,14 +28,27 @@ Each field has a name as shown below:
 * opcode (7): partially specifies operation
    – e.g. R-types have opcode = 0b0110011,
 * funct7+funct3 (10): combined with opcode,these two fields describe what operation to perform.
-We can encode 1024 instructions under this R type. As 2^10 = 1024.
-These instructions perform tasks like adding or subtracting numbers directly in the computer's registers (small storage areas inside the CPU).
+We can encode 1024 instructions under this R type. As 2^10 = 1024.<br/>
+These instructions perform tasks like adding or subtracting numbers directly in the computer's registers (small storage areas inside the CPU).<br/>
 Example: add x1, x2, x3 (Add the data of registers x2 and x3, and store the result in x1).
 #### I-Type (Immediate and Load Operations):
-<br/><br/>
-Used for tasks that involve a fixed number (an immediate value) or loading data from memory.
+* Define “fields” of the following number of bits
+each: 12 + 5 + 3 + 5 + 7 = 32
+   <br/> ![Screenshot 2024-05-28 150236](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/ad6b17ac-9cb7-43a2-b279-0f7c3497a663)<br/>
+   Each field has a name as shown below:
+
+    ![Screenshot 2024-05-28 150348](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/3e557ea6-c2d3-4a35-b8c9-19419e545a5a)
+
+<br/>
+* Only imm field is different from R-format: rs2 and funct7 replaced by 12-bit signed immediate, imm[11:0].
+* opcode (7): uniquely specifies the instruction.
+* rs1 (5): specifies a register operand.
+* rd (5): specifies destination register that receives result of computation.<br/>
+Used for tasks that involve a fixed number (an immediate value) or loading data from memory.<br/>
 Example: addi x1, x2, 10 (Add the number 10 to the data of register x2, and store the result in x1).
 #### S-Type (Store Operations):
+S-type is used for stores.<br/>
+Store needs to read two registers, rs1 for base memory address, and rs2 for data to be stored
 <br/> <br/>
 These instructions store data from a register into memory.
 Example: sw x3, 4(x2) (Store the contents of register x3 into the memory location calculated by adding 4 to the contents of register x2).
