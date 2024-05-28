@@ -20,5 +20,11 @@ THE OUTPUT IS SHOWN BY GIVING COMMAND ./a.out<br/>
 <br/>
 
 ### RISCV based Lab work
-##### compiling the same C program with RISCV
+##### Compiling the same C program with RISCV
+<br/>
+![Screenshot 2024-05-28 133813](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/fe9f0a84-a7a8-4fce-83ab-e18527d067a2)
+<br/>![Screenshot 2024-05-28 135542](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/ea019c81-65ea-4636-9aac-1adac591ec6c)
+<br/>![Screenshot 2024-05-28 135834](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/4806062d-90dc-4f39-ae78-8f5bd16a6a7b)
+<br/>![Screenshot 2024-05-28 135850](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/ce46590a-b998-4130-9e40-269260da623d)
+
 
