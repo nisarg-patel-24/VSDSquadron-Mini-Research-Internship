@@ -29,6 +29,7 @@ Each field has a name as shown below:
    – e.g. R-types have opcode = 0b0110011,
 * funct7+funct3 (10): combined with opcode,these two fields describe what operation to perform.
 We can encode 1024 instructions under this R type. As 2^10 = 1024.<br/>
+![Screenshot 2024-05-28 170944](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/a748567b-094a-4c99-ac0e-148c57d49584)<br/>
 These instructions perform tasks like adding or subtracting numbers directly in the computer's registers (small storage areas inside the CPU).<br/>
 Example: add x1, x2, x3 (Add the data of registers x2 and x3, and store the result in x1).
 #### I-Type (Immediate and Load Operations):
@@ -138,7 +139,9 @@ There are two primary U-Type instructions in RISC-V:<br/>
   
 Example: lui x1, 0x10000 (Load the upper 20 bits of register x1 with the value 0x10000).
 #### J-Type (Jump Operations):
-J-Type (Jump Type) Instructions are used for unconditional jumps in RISC-V. These instructions allow the program to jump to a new address, which is essential for implementing control flow structures like function calls and loops.<br/><br/>
+J-Type (Jump Type) Instructions are used for unconditional jumps in RISC-V. These instructions allow the program to jump to a new address, which is essential for implementing control flow structures like function calls and loops.<br/>
+![Screenshot 2024-05-28 165730](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/e4e2cde0-32cb-4459-8bfd-928be90870d8)<br/>
+![Screenshot 2024-05-28 165905](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/5ace81f4-f826-4fae-a7b2-cae79a04a630)<br/>
 #### Breakdown of each field:
 * imm[20]: The 20th bit of the immediate value.
 * imm[10:1]: Bits 10 to 1 of the immediate value.
@@ -165,7 +168,7 @@ Example: jal x1, 16 (Jump to the instruction located 16 places ahead and save th
    * rs1: r2 is register 2, so the binary encoding is 00010.
    * funct3: 000 (for ADD).
    * rd: r6 is register 6, so the binary encoding is 00110.
-   * opcode: 0110011
+   * opcode: 0110011<br/>
 32 bit pattern is 0000000 00001 00010 000 00110 0110011
 
 2. SUB r7, r1, r2
@@ -175,7 +178,7 @@ Example: jal x1, 16 (Jump to the instruction located 16 places ahead and save th
    * rs1: r1 is register 1, so the binary encoding is 00001.
    * funct3: 000 (for SUB).
    * rd: r7 is register 7, so the binary encoding is 00111.
-   * opcode: 0110011
+   * opcode: 0110011<br/>
 32 bit pattern is 0100000 00010 00001 000 00111 0110011
 
 3. AND r8, r1, r3
@@ -185,7 +188,7 @@ Example: jal x1, 16 (Jump to the instruction located 16 places ahead and save th
    * rs1: r1 is register 1, so the binary encoding is 00001.
    * funct3: 111 (for AND).
    * rd: r8 is register 8, so the binary encoding is 01000.
-   * opcode: 0110011
+   * opcode: 0110011<br/>
 32 bit pattern is 0000000 00011 00001 111 01000 0110011
 
 4. OR r9, r2, r5
@@ -195,7 +198,7 @@ Example: jal x1, 16 (Jump to the instruction located 16 places ahead and save th
    * rs1: r2 is register 2, so the binary encoding is 00010.
    * funct3: 110 (for OR).
    * rd: r9 is register 9, so the binary encoding is 01001.
-   * opcode: 0110011
+   * opcode: 0110011<br/>
 32 bit pattern is 0000000 00101 00010 110 01001 0110011
 
 5. XOR r10, r1, r4
@@ -205,7 +208,7 @@ Example: jal x1, 16 (Jump to the instruction located 16 places ahead and save th
   * rs1: r1 is register 1, so the binary encoding is 00001.
   * funct3: 100 (for XOR).
   * rd: r10 is register 10, so the binary encoding is 01010.
-  * opcode: 0110011
+  * opcode: 0110011<br/>
 32 bit pattern is 0000000 00100 00001 100 01010 0110011
 
 6. SLT r11, r2, r4
@@ -215,7 +218,7 @@ Example: jal x1, 16 (Jump to the instruction located 16 places ahead and save th
   * rs1: r2 is register 2, so the binary encoding is 00010.
   * funct3: 010 (for SLT).
   * rd: r11 is register 11, so the binary encoding is 01011.
-  * opcode: 0110011
+  * opcode: 0110011<br/>
 32 bit pattern is 0000000 00100 00010 010 01011 0110011
 
 7. ADDI r12, r4, 5
@@ -224,7 +227,7 @@ Example: jal x1, 16 (Jump to the instruction located 16 places ahead and save th
   * rs1: r4 is register 4, so the binary encoding is 00100.
   * funct3: 000 (for ADDI).
   * rd: r12 is register 12, so the binary encoding is 01100.
-  * opcode: 0010011
+  * opcode: 0010011<br/>
 32 bit pattern is 000000000101 00100 000 01100 0010011
 
 8. SW r3, r1, 2
@@ -233,7 +236,7 @@ Example: jal x1, 16 (Jump to the instruction located 16 places ahead and save th
    * rs2: r3 is register 3, so the binary encoding is 00011.
    * rs1: r1 is register 1, so the binary encoding is 00001.
    * funct3: 010 (for SW).
-   *opcode: 0100011
+   *opcode: 0100011<br/>
 32 bit pattern is 0000001 00011 00001 010 00010 0100011
 
 9. SRL r16, r14, r2
@@ -243,7 +246,7 @@ Example: jal x1, 16 (Jump to the instruction located 16 places ahead and save th
    * rs1: 01110 
    * funct3: 001 
    * rd: 10000 
-   * opcode: XXXXXXX ( not specific any opcode is suitable).
+   * opcode: XXXXXXX ( not specific any opcode is suitable). <br/>
 32 bit pattern is 0000000 00010 01110 001 10000 XXXXXXX
 
 10. BNE r0, r1, 20
@@ -256,7 +259,7 @@ Example: jal x1, 16 (Jump to the instruction located 16 places ahead and save th
   * funct3: 001 (for BNE).
   * imm[4:1]: 0100 (binary) corresponds to 4 (decimal).
   * imm[11]: 0 
-  * opcode: 1100011
+  * opcode: 1100011<br/>
 32 bit pattern is 00010100 00001 00000 001 0100 0 1100011
 
 11. BEQ r0, r0, 15
@@ -269,7 +272,7 @@ Example: jal x1, 16 (Jump to the instruction located 16 places ahead and save th
  * funct3: 000 (for BEQ).
  * imm[4:1]: 0111 (binary) corresponds to 7 (decimal).
  * imm[11]: 0 (since the immediate is positive, bit 11 is 0).
- * opcode: 1100011
+ * opcode: 1100011<br/>
 32 bit pattern is 0001110 00000 00000 000 0111 0 1100011
 
 12. LW r13, r1, 2
@@ -278,7 +281,7 @@ Example: jal x1, 16 (Jump to the instruction located 16 places ahead and save th
  * rs1: r1 is register 1, so the binary encoding is 00001.
  * funct3: 010 (for LW).
  * rd: r13 is register 13, so the binary encoding is 01101.
- * opcode: 0000011
+ * opcode: 0000011<br/>
 32 bit pattern is 000000000010 00001 010 01101 0000011
 
 13. SLL r15, r1, r2
@@ -288,5 +291,5 @@ Example: jal x1, 16 (Jump to the instruction located 16 places ahead and save th
  * rs1: r1 is register 1, so the binary encoding is 00001.
  * funct3: 001 (for SLL).
  * rd: r15 is register 15, so the binary encoding is 01111.
- * opcode: 0110011
+ * opcode: 0110011<br/>
 32 bit pattern is 0000000 00010 00001 001 01111 0110011 
