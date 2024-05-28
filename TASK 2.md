@@ -18,7 +18,19 @@ Computer processors follow sets of instructions to perform tasks.
 RISC-V instructions are grouped into different types based on their function. Here are some key types:
 <br/>
 #### R-Type (Register Operations):
-<br/><br/>
+Define “fields” of the following number of bits
+each: 7 + 5 + 5 + 3 + 5 + 7 = 32
+<br/>![Screenshot 2024-05-28 144917](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/195ac657-0d17-4fd5-9b54-9a4fd8372245)
+Each field has a name as shown below:
+     ![Screenshot 2024-05-28 144950](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/97af4e2e-5e89-4992-895e-e9fc9143ad0f)
+<br/>
+* Each field is viewed as its own unsigned int.
+* 5-bit fields can represent any number 0-31,
+  while 7-bit fields can represent any number 0-128.
+* opcode (7): partially specifies operation
+   – e.g. R-types have opcode = 0b0110011,
+* funct7+funct3 (10): combined with opcode,these two fields describe what operation to perform.
+We can encode 1024 instructions under this R type. As 2^10 = 1024.
 These instructions perform tasks like adding or subtracting numbers directly in the computer's registers (small storage areas inside the CPU).
 Example: add x1, x2, x3 (Add the data of registers x2 and x3, and store the result in x1).
 #### I-Type (Immediate and Load Operations):
