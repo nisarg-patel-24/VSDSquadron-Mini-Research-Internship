@@ -47,7 +47,7 @@ Example: addi x1, x2, 10 (Add the number 10 to the data of register x2, and stor
 S-type is used for stores.<br/>
 Store needs to read two registers, rs1 for base memory address, and rs2 for data to be stored
 <br/> ![Screenshot 2024-05-28 151558](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/906512b7-3514-4af4-99fa-91356850b913)
-<br/>
+<br/>![Screenshot 2024-05-28 155156](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/56b7977a-c724-4451-b98d-b2fa9beb4f36)<br/>
 Total 32 bits: 7 + 5 + 5 +3 + 5 + 7 =32<br/>
 ###### Breakdown of each field:
 * imm[11:5]: The upper 7 bits of the 12-bit immediate value.
@@ -74,8 +74,10 @@ funct3 = 010<br/>
 Example: sw x3, 4(x2) (Store the contents of register x3 into the memory location calculated by adding 4 to the contents of register x2).
 #### B-Type (Branch Operations):
 B-Type (Branch Type) Instructions are used for conditional branching in RISC-V. These instructions allow the program to change the flow of execution based on the comparison of two registers. Conditional branching is essential for implementing control structures like if-else statements and loops.<br/>
-Total 32 bits: 1 + 6 + 5 + 5 +3 + 4 + 1 + 7 = 32.
-<br/>
+Total 32 bits: 1 + 6 + 5 + 5 +3 + 4 + 1 + 7 = 32.<br/>
+![Screenshot 2024-05-28 160410](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/b6f348c5-0fe3-4d9e-9f6d-76cb19cbe4aa)<br/>
+![Screenshot 2024-05-28 160653](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/89140253-05c3-4098-bfd0-384fbc509a03)<br/>
+
 #### Breakdown of each field:
 
 * imm[12]: The 12th bit of the immediate value.
@@ -111,10 +113,30 @@ Total 32 bits: 1 + 6 + 5 + 5 +3 + 4 + 1 + 7 = 32.
 * Instruction: bgeu rs1, rs2, offset
 * operation: Branch to PC + offset if rs1 >= rs2 (unsigned comparison).
 * funct3: 111<br/><br/>
+
 Example: beq x1, x2, 8 (If the contents of x1 and x2 are equal, jump to the instruction located 8 places ahead).
 #### U-Type (Upper Immediate Operations):
-<br/> <br/>
-These set a part of a register to a large immediate value, often used for initializing addresses or constants.
+U-Type (Upper Immediate) Instructions are used to handle large immediate values in RISC-V. These instructions are essential for setting up addresses or constants in registers. U-Type instructions provide a straightforward way to manipulate the upper 20 bits of a 32-bit register.<br/> <br/>
+
+#### Breakdown of each field:
+* imm[31:12]: The upper 20 bits of the immediate value (20 bits).
+* rd: The destination register (5 bits) where the result will be stored.
+* opcode: The operation code (7 bits).
+### Types of U-Type Instructions
+There are two primary U-Type instructions in RISC-V:<br/>
+##### LUI (Load Upper Immediate)
+* Instruction: lui rd, imm
+* Operation: Loads the upper 20 bits of register rd with the immediate value imm. The lower 12 bits of the register are set to zero.
+* Example: lui x5, 0x12345
+* Effect: x5 = 0x12345000
+* Opcode: 0110111
+##### AUIPC (Add Upper Immediate to PC)
+* Instruction: auipc rd, imm
+* Operation: Adds the upper 20 bits of the immediate value to the current program counter (PC), then stores the result in register rd.
+* Example: auipc x5, 0x12345
+* Effect: x5 = PC + 0x12345000
+* Opcode: 0010111<br/>
+  
 Example: lui x1, 0x10000 (Load the upper 20 bits of register x1 with the value 0x10000).
 #### J-Type (Jump Operations):
 <br/><br/>
