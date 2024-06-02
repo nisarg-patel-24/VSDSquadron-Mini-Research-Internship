@@ -17,6 +17,17 @@ $ sudo apt-get install iverilog gtkwave<br/>
  $ ./iiitb_rv32i
 ![Screenshot 2024-05-31 213851](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/0fd162ea-f995-45f1-8c0a-09899dc34150)<br/>
 ![Screenshot 2024-05-31 213911](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/695cfe2f-ae2c-457e-bb08-4e863d5095ce)<br/>
--Now to see the output waveform, type 
- $ gtkwave iiitb_rv32i.vcd
+-Now to see the output waveform, type <br/>
+ $ gtkwave iiitb_rv32i.vcd<br/>
+The GTKWAVE window will get opened.<br/>
+ ![Screenshot 2024-06-02 152558](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/d7e10424-ccb5-4bb7-a4ce-2b3cb9475e4b)<br/>
+Now, to observe waveforms, leftmost there is file name iiitb_rv32i, just click on add button and dropdown file of rv32i will show.<br/>
+Many type of signal options will be available.<br/>
+Select related and click on Insert to observe its waveform.<br/>
+
+
+ #### Observing RISCV Instructions:
+ 1. ADD r6, r2, r1<br/>
  
+
+
