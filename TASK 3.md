@@ -28,50 +28,24 @@ Select related and click on Insert to observe its waveform.<br/>
 
  #### Observing RISCV Instructions:
  1. ADD r6, r2, r1<br/>
-![Screenshot 2024-06-02 151842](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/1cdded12-e320-4183-8991-e814dacdc585)<br/>
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![Screenshot 2024-06-02 151900](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/3bba8331-059d-479e-9ffb-824b20eb35eb)
-![Screenshot 2024-06-02 151917](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/b4cbe70c-70e2-40dd-854d-8f390fe52bbd)
-![Screenshot 2024-06-02 151943](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research
-![Screenshot 2024-06-02 152021](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/026ef41f-bf9a-4c44-9eb1-5e6b04466e08)
--Internship/assets/167600511/f2da0ab5-2a7f-41ca-81c4-f81b227d3834)
-![Screenshot 2024-06-02 152002](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/95f740e0-7d9d-4368-82c0-e4456bc3b741)
-![Screenshot 2024-06-02 152035](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/8b915532-2dfd-4d12-9af2-352752477cfa)
-
-![Screenshot 2024-06-02 152500](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/398623af-3253-490d-8cdd-daf52b1741b
-![Screenshot 2024-06-02 152531](https://github.com/nisarg-patel-2
-![Screenshot 2024-06-02 152002](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/ca3925ae-0f43-4d42-9838-b0064fb81c26)
-4/VSDSquadron-Mini-Research-Internship/assets/167600511/76d86665-6256-468f-85d0-77bcce7d2967)
-9)
-
-![Screenshot 2024-06-02 152517](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/6ec16b77-2ab3-4d15-946d-68df61d26460)
+ ![Screenshot 2024-06-02 151842](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/1cdded12-e320-4183-8991-e814dacdc585)<br/>
+ 2. SUB r7, r1, r2<br/>
+ ![Screenshot 2024-06-02 151900](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/3bba8331-059d-479e-9ffb-824b20eb35eb)<br/>
+ 3. AND r8, r1, r3<br/>
+ ![Screenshot 2024-06-02 151917](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/b4cbe70c-70e2-40dd-854d-8f390fe52bbd)<br/>
+ 4. OR r9, r2, r5<br/>
+ ![Screenshot 2024-06-02 151943](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/f2da0ab5-2a7f-41ca-81c4-f81b227d3834)<br/>
+ 5. XOR r10, r1, r4<br/>
+![Screenshot 2024-06-02 152002](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/95f740e0-7d9d-4368-82c0-e4456bc3b741)<br/>
+ 6. SLT r11, r2, r4<br/>
+  ![Screenshot 2024-06-02 152021](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/026ef41f-bf9a-4c44-9eb1-5e6b04466e08)<br/>
+ 7. ADDI r12, r4, 5<br/>
+ ![Screenshot 2024-06-02 152035](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/8b915532-2dfd-4d12-9af2-352752477cfa)<br/>
+ 8. SW r3, r1, 2<br/>
+ ![Screenshot 2024-06-02 152500](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/398623af-3253-490d-8cdd-daf52b1741b9)<br/>
+ 9. LW r13, r1, 2<br/>
+ ![Screenshot 2024-06-02 152517](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/6ec16b77-2ab3-4d15-946d-68df61d26460)<br/>
+10. BEQ r0, r0, 15<br/>
+-AFTER BRANCHING SHOWN IN BELOW INSTRUCTION.
+11. ADD r14, r2, r2<br/>
+ ![Screenshot 2024-06-02 152531](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/76d86665-6256-468f-85d0-77bcce7d2967)<br/>
