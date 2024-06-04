@@ -17,7 +17,8 @@
 ### CIRCUIT LAYOUT:
 <br/>![Screenshot 2024-06-04 184219](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/3c0f8370-abea-4e3f-8c55-1e1b382a2a7b)
 ### IC 74HC595 PIN DIAGRAM:
-
+![Screenshot 2024-06-04 193922](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/125191d0-7b19-4e68-9664-2d6a4b2d67ba)
+<br/>
 ![Screenshot 2024-06-04 191419](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/734f527f-bd0e-4f8f-94a9-66c09a4c3303)
 <br/>
 ### PIN CONNECTION:
