@@ -14,12 +14,13 @@
 * POWER SUPPLY
 * BREAD BOARD
 
-#### CIRCUIT LAYOUT:
-<br/>
+### CIRCUIT LAYOUT:
+<br/>![Screenshot 2024-06-04 184219](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/3c0f8370-abea-4e3f-8c55-1e1b382a2a7b)
+### IC 74HC595 PIN DIAGRAM:
 
-#### IC 74HC595 PIN DIAGRAM:
+![Screenshot 2024-06-04 191419](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/734f527f-bd0e-4f8f-94a9-66c09a4c3303)
 <br/>
-##### PIN CONNECTION:
-<br/>
+### PIN CONNECTION:
+![Screenshot 2024-06-04 193456](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/16bc6a58-e939-490b-b4af-838d6a5ff0bf)<br/>
 
   
