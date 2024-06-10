@@ -104,4 +104,3 @@ https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/1
 ![Screenshot 2024-06-10 235134](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/8df1878f-52a2-4836-bfe7-625131c7ecba)
 <br/>
 
-https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/66719c4e-d951-4ca1-95f8-b8db6854bb7b
