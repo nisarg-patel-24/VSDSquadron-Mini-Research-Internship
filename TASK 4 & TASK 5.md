@@ -91,5 +91,13 @@ int main() {
     return 0;
 }
 ```
+
 ## WORKING VIDEO:
+
+https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/a32d18aa-2afc-4837-9ed5-f2d1a3819f46
+
+### CHANGING PATTERN:
+
+https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/66719c4e-d951-4ca1-95f8-b8db6854bb7b
+
 
