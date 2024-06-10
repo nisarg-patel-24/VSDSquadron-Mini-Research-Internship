@@ -16,5 +16,80 @@
 ![Screenshot 2024-06-10 220042](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/cb23df9c-b5ae-4f2c-95fb-bda51a24a965)
 <br/>
 ### PIN CONNECTION:
+![Screenshot 2024-06-10 221456](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/36d09db8-7885-4863-a484-1b818049f253)
+<br/>
+### CODE:
+```
+#include <ch32v00x.h>
 
+#define BIT0_PIN GPIO_Pin_4 // Bit 0 output (PD4)
+#define BIT1_PIN GPIO_Pin_5 // Bit 1 output (PD5)
+#define BIT2_PIN GPIO_Pin_6 // Bit 2 output (PD6)
+#define BIT3_PIN GPIO_Pin_3 // Bit 3 output (PD3)
+#define GPIO_PORT GPIOD // GPIO port for all the above pins
+
+void GPIO_Config(void) {
+    // Enable the clock for GPIOD
+   RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
+
+    // Configure PD4, PD5, PD6, and PD3 as outputs
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Pin = BIT0_PIN | BIT1_PIN | BIT2_PIN | BIT3_PIN;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; // Push-pull output
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIO_PORT, &GPIO_InitStructure);
+}
+
+void outputBits(uint8_t data) {
+    // Set or reset each GPIO pin according to the corresponding bit in the data
+    if (data & 0x01) {
+        GPIO_SetBits(GPIO_PORT, BIT0_PIN);
+    } else {
+        GPIO_ResetBits(GPIO_PORT, BIT0_PIN);
+    }
+    if (data & 0x02) {
+        GPIO_SetBits(GPIO_PORT, BIT1_PIN);
+    } else {
+        GPIO_ResetBits(GPIO_PORT, BIT1_PIN);
+    }
+    if (data & 0x04) {
+        GPIO_SetBits(GPIO_PORT, BIT2_PIN);
+    } else {
+        GPIO_ResetBits(GPIO_PORT, BIT2_PIN);
+    }
+    if (data & 0x08) {
+        GPIO_SetBits(GPIO_PORT, BIT3_PIN);
+    } else {
+        GPIO_ResetBits(GPIO_PORT, BIT3_PIN);
+    }
+}
+
+int main() {
+    SystemCoreClockUpdate();
+    Delay_Init();
+
+    // Initialize the GPIO for the output bits
+    GPIO_Config();
+
+    uint8_t patterns[] = {0x0, 0x1, 0x3, 0x7, 0xF, 0xE, 0xC, 0x8};
+    uint8_t pattern_count = sizeof(patterns) / sizeof(patterns[0]);
+    uint8_t current_pattern = 0;
+
+    while (1) {
+        // Output the current pattern to the GPIO pins
+        outputBits(patterns[current_pattern]);
+
+        // Move to the next pattern
+        current_pattern++;
+        if (current_pattern >= pattern_count) {
+            current_pattern = 0;
+        }
+
+        Delay_Ms(2000); // Delay for visualization
+    }
+
+    return 0;
+}
+```
+## WORKING VIDEO:
 
