@@ -18,6 +18,9 @@
 ### PIN CONNECTION:
 ![Screenshot 2024-06-10 221456](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/36d09db8-7885-4863-a484-1b818049f253)
 <br/>
+#### CURRENT SERIAL DATA PATTERN:
+![Screenshot 2024-06-10 213644](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/0b4440b3-5f59-4b8c-b1e1-8def2af8bcb6)
+<br/>
 ### CODE:
 ```
 #include <ch32v00x.h>
@@ -97,7 +100,8 @@ int main() {
 https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/a32d18aa-2afc-4837-9ed5-f2d1a3819f46
 
 ### CHANGING PATTERN:
+#### NEW PATTERN:
+![Screenshot 2024-06-10 235134](https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/8df1878f-52a2-4836-bfe7-625131c7ecba)
+<br/>
 
 https://github.com/nisarg-patel-24/VSDSquadron-Mini-Research-Internship/assets/167600511/66719c4e-d951-4ca1-95f8-b8db6854bb7b
-
-
